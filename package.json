@@ -12,13 +12,13 @@
     "url": "git://github.com/spikebrehm/rendr.git"
   },
   "dependencies": {
-    "underscore": "1.4.4",
+    "underscore": "1.12.1",
     "backbone": "1.0.0",
     "async":"0.1.22",
     "qs": "0.5.1",
     "express": "~3.0.6",
     "validator": "0.4.21",
-    "rendr-handlebars": "0.0.5",
+    "rendr-handlebars": "1.0.0",
     "request": "~2.16",
     "debug": "*",
     "npm": "*"
