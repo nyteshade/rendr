@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --ui bdd --reporter spec  ./test --recursive",
-    "postinstall": "node ./scripts/postinstall.js"
+    "postinstall": "node ./scripts/postinstall.js",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -14,14 +16,15 @@
   "dependencies": {
     "underscore": "1.4.4",
     "backbone": "1.0.0",
-    "async":"0.1.22",
+    "async": "0.1.22",
     "qs": "0.5.1",
     "express": "~3.0.6",
     "validator": "0.4.21",
     "rendr-handlebars": "0.0.5",
     "request": "~2.16",
     "debug": "*",
-    "npm": "*"
+    "npm": "*",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "mocha": "*",
@@ -36,5 +39,6 @@
     "render"
   ],
   "author": "Spike Brehm <ocelot@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
