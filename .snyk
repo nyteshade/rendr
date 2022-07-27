@@ -1,0 +1,10 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:uglify-js:20151024':
+    - rendr-handlebars > handlebars.js > uglify-js:
+        patched: '2022-07-27T20:06:20.452Z'
+    - rendr-handlebars > rendr > rendr-handlebars > handlebars.js > uglify-js:
+        patched: '2022-07-27T20:06:20.452Z'
